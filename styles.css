@@ -1,0 +1,40 @@
+body {
+  background-color: #38b3f6;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.main-header {
+  background-color: #133a50;
+}
+.logo {
+  max-width: 80px;
+  padding: 10px;
+}
+.navigation {
+  background-color: #081923;
+}
+/* descendant selector */
+.navigation a {
+  color: #9ed0ed;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+.banner-image {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+.banner {
+  background-color:#f5f3a1;
+  /* text-align: center; */
+}
+.content {
+  max-width: 1000px;
+  margin: auto;
+  line-height: 2em;
+  font-size: 1.5em;
+}
+.highlight {
+  background-color: yellow;
+}
