@@ -8,13 +8,14 @@
   <meta name="author" content="johannes">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <header class="main-header">
     <div class="header-group">
       <a href="index.html">
-        <img src="images/TipToe Soles_Logo_colour.png" alt="tip toe shoes logo" class="logo">
+        <img src="images/TipToe_Soles_Logo_colour.png" alt="tip toe shoes logo" class="logo">
       </a>
       <nav class="navigation">
         <a href="index.html">Home</a>
@@ -23,32 +24,40 @@
       </nav>
     </div>
     <nav class="navigation">
-      <a href="login.html">Account</a>
+      <a href="login.html">
+        <span class="sr-only">Account</span>
+        <i class="fa-solid fa-user"></i>
+      </a>
       <a href="list.html">Wishlist</a>
       <a href="cart.html">Cart</a>
     </nav>
+
+    <div class="search-box">
+      <form class="search-form">
+        <label for="keywords" class="sr-only">Search query</label>
+        <input type="search" placeholder="Type a search keyword" id="keywords">
+        <button type="submit">
+          <span class="sr-only">Search</span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
   </header>
-  <div>
-    <form class="search-form">
-      <label for="keywords">Search form</label>
-      <input type="search" placeholder="Type a search keyword" id="keywords">
-      <button type="submit">Search</button>
-    </form>
-  </div>
-  <div class="banner">
-    <img class="banner-image" src="b69b87571eb7363427d93856c4ccfd4d.png" alt="urban collective banner">
-  </div>
   <main class="content">
-    <h1>Home Page</h1>
-    <p>A <em>sunny day</em> in the mountains is <strong>breathtakingly beautiful</strong>, with the sun casting a warm
-      and golden glow on the towering peaks and lush green valleys below. The crisp, clean air is invigorating, and the
-      birds chirping and gentle sound of a nearby stream create a <span class="highlight">peaceful ambiance</span>. The
-      clear blue sky stretches endlessly overhead, dotted with fluffy white clouds that seem to dance along with the
-      breeze. It's a perfect day for hiking, taking in the stunning vistas, and simply soaking up the natural beauty
-      that surrounds you.</p>
+
   </main>
-  <footer>
-    <p>&copy; Johannes 2024 All rights reserved</p>
+  <footer class="footer">
+    <nav class="social-nav">
+      <a href="https://instagram.com/tiptoesoles">Instagram</a>
+      <a href="https://tiktok.com/tiptoesoles">TikTok</a>
+      <a href="https://facebook.com/tiptoesoles">Facebook</a>
+    </nav>
+    <nav class="policies-nav">
+      <a href="return.html">Return Policy</a>
+      <a href="exchange.html">Exchange Policy</a>
+      <a href="delivery.html">Delivery Policy</a>
+    </nav>
+    <p>&copy; Tip Toe Soles 2024 All rights reserved</p>
   </footer>
 </body>
 
