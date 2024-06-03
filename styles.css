@@ -66,7 +66,7 @@ body {
   /* text-align: center; */
 }
 .content {
-  max-width: 1000px;
+  max-width: 90vw;
   margin: auto;
   line-height: 2em;
   font-size: 1.5em;
@@ -76,6 +76,7 @@ body {
 }
 .footer {
   background-color: #133a50;
+  padding: 1em;
 }
 .policies-nav {
   display: flex;
@@ -90,13 +91,18 @@ body {
 .social-nav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-end; 
 }
 .social-nav a {
   color: #9ed0ed;
   text-decoration: none;
   padding: 10px;
   display: block;
+  font-size: 1.2em;
+}
+.copyright {
+  text-align: center;
+  color: #9ed0ed;
 }
 
 .sr-only {
@@ -106,4 +112,30 @@ body {
   width:1px;
   height:1px;
   overflow:hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.promo-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+}
+.card {
+  background-color: #79c9f4;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0.5em;
+}
+.card-body h4 {
+  margin: 0px;
 }
