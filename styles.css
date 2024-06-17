@@ -67,7 +67,7 @@ body {
 }
 .content {
   max-width: 90vw;
-  margin: auto;
+  margin: 2em auto;
   line-height: 2em;
   font-size: 1.5em;
 }
@@ -138,4 +138,42 @@ img {
 }
 .card-body h4 {
   margin: 0px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.card iframe {
+  aspect-ratio: 4/3;
+}
+#contact-form {
+  background-color: #fefefe;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+#contact-form input, #contact-form textarea {
+  display: block;
+  padding: 0.5em;
+  border-color: #18516f;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.buttons button {
+  display: block;
+  flex: 1;
+  padding: 0.5em;
+  background-color: #18516f;
+  color: #fefefe;
 }
